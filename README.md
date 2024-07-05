@@ -31,3 +31,4 @@ This is a framework designed to test the UI using Playwright by Microsoft and th
 
 When updating the pom.xml file better lookout to update JRE too.
 "# infydemoproj" 
+"# infydemoproj" 
