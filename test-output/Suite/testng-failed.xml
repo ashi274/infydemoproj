@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="UITest(failed)">
+    <parameter name="br" value="chrome"/>
+    <parameter name="url" value="https://www.polestar.com/global/developer/get-started/"/>
+    <classes>
+      <class name="poleStar.UiTestClass">
+        <methods>
+          <include name="navigateToTheLink"/>
+          <include name="beforeMethod"/>
+          <include name="rejectCookies"/>
+          <include name="toHomePage"/>
+          <include name="toLearnMore"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- poleStar.UiTestClass -->
+    </classes>
+  </test> <!-- UITest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

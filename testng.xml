@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel= "tests" thread-count ="5">
+
+	<parameter name="url" value="https://www.polestar.com/global/developer/get-started/" />
+	<test name="UITestChrome">
+		<parameter name="br" value="chrome" />
+		<classes>
+			<class name="poleStar.UiTestClass" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="UITestFirefox">
+
+		<parameter name="br" value="firefox" />
+		<classes>
+			<class name="poleStar.UiTestClass" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="UITestWebkit">
+		<parameter name="br" value="webkit" />
+		<classes>
+			<class name="poleStar.UiTestClass" />
+		</classes>
+	</test> <!-- Test -->
+	
+	
+	<test name="APITest">
+
+		<parameter name="uriGet"
+			value="http://10.82.180.36:8080/AmigoWallet/RegistrationAPI/getAllQuestions"></parameter>
+		<classes>
+			<class name="poleStar.ApiTestClass" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
